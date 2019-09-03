@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="45.486057">
+<testcase classname="Login Action" name="Login as 2 users in 2 different tabs. Check presence of each user from the other user�s tab. Make an AV call from one user and accept the call from the other user. Login as a 3rd user. Call 2nd user who is already IN_CALL. 2nd user declines the 3rd user�s call." time="45.484764">
+<system-out><![CDATA[Given SC1_Browser is launched and userA is on home page.....................passed
+Then SC1_userA checks the presence of userB.................................passed
+Then SC1_userB is on home page..............................................passed
+Then SC1_userB checks the presence of userA.................................passed
+Then SC1_userA makes AV call to userB and userB accept the userA call.......passed
+Then SC1_userC is on home page..............................................passed
+Then SC1_userC call userB...................................................passed
+Then SC1_userB declines userC call..........................................passed
+Then SC1_Logout all the users and close the browser.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as 2 users in 2 different tabs. Make an AV call from one user and accept the call from the other user. Login as a 3rd user. Call the 1st user who is already IN_CALL. 1st user accepts the call. End the call from 3rd user" time="0.000214">
+<system-out><![CDATA[Given SC2_Browser is launched and userA is on home page.....................passed
+Then SC2_userB is on home page..............................................passed
+Then SC2_userB makes AV call to userA and userA accepts userB call..........passed
+Then SC2_userC is on homepage...............................................passed
+Then SC2_userC make AV call to userA........................................passed
+Then SC2_userA accepts userC call...........................................passed
+Then SC2_userC end the call.................................................passed
+Then SC2_ logout all the users and close the browser........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as 1 user. Leave the session idle for 10 minutes. On the session expiry notification, click on �Yes�. Leave the session idle for 10 minutes. On the session expiry notification, click on �Logout�" time="0.000206">
+<system-out><![CDATA[Given SC3_browser is launched and userA is on homepage......................passed
+Then SC3_userA leaves the session idle for 10 minutes_1.....................passed
+Then SC3_on the session expiry notification userA click on yes..............passed
+Then SC3_userA leaves the session idle for 10 minutes.......................passed
+Then SC3_on the session expiry notification userA click on logout...........passed
+Then SC3_logout all the users and close the browser.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as user in 1 tab and a device in another. Click on �View Console�. After sometime, click on �Close Console�" time="0.000199">
+<system-out><![CDATA[Given SC4_browser is launched and userA is on homepage......................passed
+Then SC4_device is on homepage..............................................passed
+Then SC4_userA views device console.........................................passed
+Then SC4_userA close console after some time................................passed
+Then SC4_logout all the users and close the browser.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as user in 1 tab and a device in another. Click on �View Console�. Click on �Enter Room�. Accept the call from device�s side. Click on �Console� icon. Click on �Ok� on the �Would you like to Continue� pop-up. Click on the �Console� icon again on the device�s side" time="0.00016">
+<system-out><![CDATA[Given SC5_browser is launched and userA is on homepage......................passed
+Then SC5_device is on homepage..............................................passed
+Then SC5_userA views device console and enter device room...................passed
+Then SC5_userA accepts device call..........................................passed
+Then Sc5_perform Action on pop up...........................................passed
+Then SC5_logout all the users and close the browser.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as user in 1 tab and a device in another. Call the user from the device. Accept the call from the user�s side. Click on �Console icon from the device�s side" time="0.000145">
+<system-out><![CDATA[Given SC6_browser is launched and userA is on homepage......................passed
+Then SC6_Device is on homepage..............................................passed
+Then SC6_Call User from device..............................................passed
+Then SC6_user accepts the call from device..................................passed
+Then SC6_from device click on console icon..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Open the ROCC App. Click on �Forgot Password�. Enter mail ID. Login as a user with the new password" time="0.000153">
+<system-out><![CDATA[Given SC7_browser is launched and ROCC app is launched......................passed
+Then SC7_click on forgot password and reset the password....................passed
+Then SC7_Login as user with new password....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as a user. Click on �User settings�. Change the settings. Make a call. Click on �Gear� icon to see the newly changed settings being auto-populated" time="0.000107">
+<system-out><![CDATA[Given SC8_browser is launched and user is on homepage.......................passed
+Then SC8_click on settings and change the settings..........................passed
+Then SC8_Make a call and check for new settings are populated...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Action" name="Login as a user. Click on the �dropdown� for any existing contact. Click on the phone number" time="0.000109">
+<system-out><![CDATA[Given SC9_browser is launched and user is on homepage.......................passed
+Then SC9_check for existing contact and click the phone number..............passed
+]]></system-out>
+</testcase>
+</testsuite>
