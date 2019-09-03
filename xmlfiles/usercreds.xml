@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<rocc>
+	<user id="id1">
+		<emailid>nandhinig@mailinator.com</emailid>
+		<password>!Welcome123</password>
+		<username>nandhini g</username>
+	</user>
+	<user id="id2">
+		<emailid>nandhinif@mailinator.com</emailid>
+		<password>!Welcome123</password>
+		<username>nandhini f</username>
+	</user>
+	<user id="id3">
+		<emailid>nandhinie@mailinator.com</emailid>
+		<password>N@ndh36n36e</password>
+		<username>nandhini g</username>
+	</user>
+	<SeatLocation>
+		<name>Deepak</name>
+		<name>Rx PIC lab</name>
+	</SeatLocation>
+	
+	<device id="176">
+		<deviceId>c30f4c20-5b03-4139-9d7f-67c2452b70d7</deviceId>
+		<devicename>JGH CT SCANNER 1</devicename>
+	</device>
+	<device id="173">
+		<deviceId>ea89460d-472d-4f48-adbb-8472fa950d1f</deviceId>
+		<devicename>JGH CT SCANNER</devicename>
+	</device>
+	
+	
+	<site id="1">
+		<siteid>14</siteid>
+		<sitename>Glomerular Disease Kidney Clinic at UWMC</sitename>
+	</site>
+	<site id="2">
+		<siteid>16</siteid>
+		<sitename>Hepatitis and Liver Clinic at Harborview</sitename>
+	</site>
+</rocc>
